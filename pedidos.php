@@ -12,15 +12,15 @@ include_once 'includes/conexao.php';
 
 		
 		$nome = filter_var($_POST['nome'], FILTER_SANITIZE_STRING);
-		htmlspecialchars($nome);
+		$nome = htmlspecialchars($nome, ENT_QUOTES);
 		$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-		htmlspecialchars($email);
+		$email = htmlspecialchars($email, ENT_QUOTES);
 		$plugin = filter_var($_POST['plugin'], FILTER_SANITIZE_STRING);
-		htmlspecialchars($plugin);
+		$plugin = htmlspecialchars($plugin, ENT_QUOTES);
 		$contato = filter_var($_POST['other'], FILTER_SANITIZE_STRING);
-		htmlspecialchars($contato);
+		$contato = htmlspecialchars($contato, ENT_QUOTES);
 		$descricao = filter_var($_POST['desc'], FILTER_SANITIZE_STRING);
-		htmlspecialchars($descricao);
+		$descricao = htmlspecialchars($descricao, ENT_QUOTES);
 		$stmt = $pdo->prepare("INSERT INTO pedidos VALUES(id, :nome, :plugin, :email, :contato, :descricao);");
 		$stmt->bindParam(":nome", $nome);
 		$stmt->bindParam(":plugin", $plugin);
@@ -32,18 +32,6 @@ include_once 'includes/conexao.php';
 		}else{
 			header("Location: pedidos.php?action=erro2");
 		}
-		// try{ 
-		
-		// }
-		// catch(PDOException $err)
-		// {
-		//   header("pedidos?action=erro");	
-		// }
-		// if(){
-		// 	header("Location: pedidos.php?action=sucesso");
-		// }else{
-		// 	echo "Aconteceu um erro!";
-		// }
 
 	}else{
 		header("Location: pedidos.php?action=erro3");
