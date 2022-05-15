@@ -1,0 +1,82 @@
+body{ margin: 0; padding: 0; overflow-x: hidden;}
+main{ display: block; margin: 0; padding: 0; width: 100%; font-family: 'Raleway', sans-serif; position: absolute;	 }
+header{display: block; margin: 0; padding: 0;border-bottom: 5px solid #4bc152; background: url('../storage/images/background.jpg') no-repeat center; position: relative; top: 0; height: 400px; }
+nav{display: block; margin: 0; padding: 0; position: relative;border-bottom: 5px solid #4bc152;}
+nav ul {display: block; width:100%; margin: 0;  padding: 0;background: #75ff7d;}
+nav ul li { display: inline-block; padding: 10px 0; margin: 0;list-style: none;position: relative;}
+nav ul li a {display:inline;margin: 0; padding: 10px;color: #fff; text-decoration: none;font-size: 16px;text-transform: uppercase;font-weight: 600;}
+nav ul li a:hover {background-color: #4bc152;padding: 10px;margin: 0;}
+.selected{background-color: #4bc152;margin: 0;}
+div.text-center{text-align: center;margin: 0;padding:  0; }
+figure.article{margin: 0; padding: 0;display: block;text-align: center; color: #333;padding: 20px 0;width: 100%;height:400px;background-color: #fff;box-shadow: 1px 0px 5px 2px #ddd;}
+figure.article img{display: block; margin: 0 auto;width: 40%;}
+footer{background-color:#75ff7d;border-top: 5px solid #4bc152;margin-top: 100px; padding: 0;}
+.redes {padding: 10px 0 0 0 ;}
+.redes p {color: #333;margin: 0;}
+div#logo {display: block; margin:100px auto; padding: 0;background-color: rgba(3,3,3,0.4);}
+div#logo img{display: block; margin:0 auto; padding: 0; width: 50%;}
+.red{background-color: rgba(255,0,0,0.5);}
+.dark-red{background-color: rgba(255,0,0,0.8);}
+.green{background-color: rgba(0,255,0,0.5);}
+.dark-green{background-color: rgba(0,255,0,0.8);}
+.yellow{background-color: rgba(255,255,0,0.5);}
+.dark-yellow{background-color: rgba(255,255,0,0.8);}
+.blue{background-color: rgba(0,0,255,0.5);}
+.dark-blue{background-color: rgba(0,0,255,0.8);}
+.text-darkgreen{color:#4bc152;}
+.panel{ display: block;margin: 10px 0; 	padding: 0; position: relative;}
+.line-down{border-bottom: 2px solid #4bc152;margin: 10px 0;padding: 0;}
+.line-left{border-left: 2px solid #4bc152;padding: 0 10px;}
+.line-right{border-right: 2px solid #4bc152;padding: 0 10px;}
+.line-top{border-top: 2px solid #4bc152;margin: 10px 0;}
+.panel .header{ 	display: block; 	position: relative; top: 0; padding: 5px 0; }
+.panel .header h1,h2,h3,h4,h5{color: #333;padding: 10px 0;text-align:center;margin: 0;}
+.panel .section {display: block; position: relative; padding: 5px 0;}
+.panel .section ul {display: block; padding: 10px 0; margin: 0;}
+.panel .section ul li {display: inline; list-style:none;padding: 0;margin: 5px 0;}
+.panel .section ul li a{display: inline; text-decoration: none; color: #333;font-weight: 460;}
+.panel .section ul li a i:hover{color: #333;transition: color 0.5s;}
+.panel .section {text-align: center; color: #333;}
+.panel .section p{padding: 0;margin: 10px;}
+.panel .section h4{text-transform: uppercase;}
+.panel .footer{display: block; position: relative; bottom: 0; padding: 5px 0;}
+.panel figure{margin:0;padding: 15%;}
+.panel figure figcaption{text-align: center;margin: 30px 0 0 0;color: #333;}
+.shadown-box {box-shadow: 0px 0px 2px 0px #333;padding: 0;margin: 10px 0;}
+footer p a{text-decoration: none;color: #333;}
+footer p a:hover{color: #fff;transition: color 1s;}
+#infobox ul{margin: 0;padding: 20px;list-style: none;}
+#infobox ul li{padding: 20px;}
+.btn-comprar{display: inline;border: none;color: #fff;text-decoration:none;font-size: 14px;background: rgba(75, 193, 82,0.7);cursor: pointer;padding: 10px;}
+.btn-comprar:hover{color: #fff;background: rgba(75, 193, 82,0.9);}
+.btn-comprar:active{color: #ddd;background: rgba(75, 193, 82,0.5);}
+.btn-infor{display: inline;border: none;color: #fff;font-size: 14px;background: rgba(51, 51, 255, 0.7);cursor: pointer;padding: 10px; }
+.btn-infor:hover{ color: #fff; background: rgba(51, 51, 255, 0.9); }
+.btn-infor:active{ color: #ddd; background: rgba(51, 51, 255, 0.7); }
+@media (max-width: 600px) {
+	div#logo img{width: 100%; height: 100px;}
+}
+.form{display: block; width: 100%; padding: 20px; margin: 10px 0;}
+.form input{width: 100%;height: 32px; padding: 10px; margin: 0;}
+.form input[type=submit]{height: auto;background-color:rgba(0,0,255,0.6);color: #ddd; font-weight: 700;text-transform: uppercase;border: none;margin-top: 20px;}
+.form input[type=submit]:hover{background-color:rgba(0,0,255,0.7);color: #fff;transition: 0.51s;}
+.form label{font-size: 14px; color: #333;}
+.form textarea{width: 100%;height: auto;padding: 10px;margin: 0;}
+select {margin:0;padding:0;display: block;width: 100%;height: 30px;text-align: center;color: #000;font-size: 14px;font-weight: 500;}
+#infobox{
+	display: none;
+	margin: 20px 20% ;
+	padding: 0;
+	position: fixed;
+	z-index: 100;
+	background-color: #FFF;
+	width: 60%;
+	color: #333;
+}
+table#tabela {margin: 0;padding: 0;width: 100%;color: #333; height: 200px;overflow: auto;}
+table#tabela thead{margin: 0; padding: 0;font-size: 20px;background-color: #4bc152;color: #333;}
+table#tabela thead tr { padding: 0;margin: 0;}
+table#tabela thead tr td {padding: 10px;text-align: center; margin: 0;}
+table#tabela tbody {margin: 0;padding: 0;background-color: #FFF;}
+table#tabela tbody tr:nth-child(odd){ padding: 1px; background-color: #75ff7d;}
+table#tabela tbody tr td {padding: 5px; text-align: justify;margin: 0;}
