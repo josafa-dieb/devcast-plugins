@@ -22,13 +22,13 @@ var count = 0;
 setInterval(function(){
 count++;
 if(count == 1){ 
-document.title = "Melhor serviços para seu servidor.";
+document.title = "Melhores serviços para seu servidor.";
 }
 if(count == 2){
-document.title = "Plugins de alta qualidade.";
+document.title = "Plugins de qualidade.";
 }
 if(count == 3){
-document.title = "Suporte super rápido.";
+document.title = "Melhor suporte de todos.";
 }
 if(count >= 4){
 count=0;
